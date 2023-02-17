@@ -30,7 +30,11 @@ export default function Calculator () {
         event.preventDefault();
         const newValue = currentCalc.slice(0, -1);
         setCurrentCalc(newValue);
-        setDisplay(newValue);
+        if(newValue == '') {
+            setDisplay('0')
+        } else {
+            setDisplay(newValue);
+        }
     }
 
     return (
