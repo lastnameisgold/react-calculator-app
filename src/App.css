@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-:focus {
+:focus-visible {
   outline: 4px dotted var(--md-sys-color-on-primary-container);
 }
 
